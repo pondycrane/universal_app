@@ -1,0 +1,68 @@
+{
+  "_args": [
+    [
+      "node-todo-server@0.0.1",
+      "/home/pondycrane/Macbook/universal_blog"
+    ]
+  ],
+  "_from": "node-todo-server@0.0.1",
+  "_id": "node-todo-server@0.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/node-todo-server",
+  "_nodeVersion": "4.4.7",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/node-todo-server-0.0.1.tgz_1473243514990_0.8466523177921772"
+  },
+  "_npmUser": {
+    "email": "tech@chionlab.moe",
+    "name": "chion82"
+  },
+  "_npmVersion": "2.15.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "node-todo-server",
+    "raw": "node-todo-server@0.0.1",
+    "rawSpec": "0.0.1",
+    "scope": null,
+    "spec": "0.0.1",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-todo-server/-/node-todo-server-0.0.1.tgz",
+  "_shasum": "4117deb51f80bb3dbf218de1f374c7a81c0fdeca",
+  "_shrinkwrap": null,
+  "_spec": "node-todo-server@0.0.1",
+  "_where": "/home/pondycrane/Macbook/universal_blog",
+  "author": "",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  },
+  "description": "Backend server of todo list written in node.js",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "4117deb51f80bb3dbf218de1f374c7a81c0fdeca",
+    "tarball": "https://registry.npmjs.org/node-todo-server/-/node-todo-server-0.0.1.tgz"
+  },
+  "gitHead": "bdc4033236ba4453b834fd0c19648bbe119a3284",
+  "license": "ISC",
+  "main": "app.js",
+  "maintainers": [
+    {
+      "email": "tech@chionlab.moe",
+      "name": "chion82"
+    }
+  ],
+  "name": "node-todo-server",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.1"
+}

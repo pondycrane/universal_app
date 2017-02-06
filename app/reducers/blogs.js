@@ -6,14 +6,22 @@ const blogs = handleActions( {
     return {...state, isLoading: true}; 
   }, 
   ['blogs/get/success'](state, action) {
-    return {...state, isLoading: false, list: action.response};
+    return {...state, isLoading: false, blogs: action.response};
   }, 
   ['blogs/get/failed'](state, action) {
     return {...state, isLoading: false, err: action.err}; 
   }, 
+  ['blogs/select'](state, action) {
+    return {...state, blogInd: action.blogInd, blogOpen: true}; 
+  }, 
+  ['blogs/back'](state) {
+    return {...state, blogOpen: false}
+  }
 }, {
   blogs: [], 
-  isLoading: false
+  isLoading: false, 
+  blogInd: 0, 
+  blogOpen: false
 }); 
 
 export default blogs; 

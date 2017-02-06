@@ -10,7 +10,7 @@
     "test:watch": "npm test -- --watch",
     "build": "del ./dist && webpack --config web/webpack.config.prod.js --progress && cp -r web/src/* dist/",
     "lint": "eslint app/**/*.js",
-    "backend": "node node_modules/node-todo-server/app.js"
+    "backend": "node app/node-server/app.js"
   },
   "keywords": [
     "react",
@@ -21,7 +21,9 @@
   "author": "Chion82",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.16.0",
     "color": "^0.11.3",
+    "express": "^4.14.1",
     "native-base-web": "0.0.4",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
