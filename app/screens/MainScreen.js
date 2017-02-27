@@ -43,7 +43,8 @@ class MainScreen extends Component {
           selected={this.state.tabIndex===0}
           onPress={() => this.setState({tabIndex:0})}
           iconColor={yayoiTheme.grey}
-          selectedIconColor={yayoiTheme.brandPrimary}>
+          selectedIconColor={yayoiTheme.brandPrimary}
+        >
 
           <BlogTab />
 
@@ -56,7 +57,8 @@ class MainScreen extends Component {
           selected={this.state.tabIndex===1}
           onPress={() => this.setState({tabIndex:1})}
           iconColor={yayoiTheme.grey}
-          selectedIconColor={yayoiTheme.brandPrimary}>
+          selectedIconColor={yayoiTheme.brandPrimary}
+        >
           <Text>Contacts Page</Text>
         </Icon.TabBarItem>
 
@@ -67,7 +69,8 @@ class MainScreen extends Component {
           selected={this.state.tabIndex===2}
           onPress={() => this.setState({tabIndex:2})}
           iconColor={yayoiTheme.grey}
-          selectedIconColor={yayoiTheme.brandPrimary}>
+          selectedIconColor={yayoiTheme.brandPrimary}
+        >
           <Text>Calendar Page</Text>
         </Icon.TabBarItem>
 
@@ -78,7 +81,8 @@ class MainScreen extends Component {
           selected={this.state.tabIndex===3}
           onPress={() => this.setState({tabIndex:3})}
           iconColor={yayoiTheme.grey}
-          selectedIconColor={yayoiTheme.brandPrimary}>
+          selectedIconColor={yayoiTheme.brandPrimary}
+        >
           <Text>My Page</Text>
         </Icon.TabBarItem>
 
