@@ -1,12 +1,15 @@
 import Blog from './models/blog'; 
 
 export default function() {
+  Blog.remove( {}, ( err ) => !err ? console.log( 'success' ) : console.log( err ) ); 
   Blog.count().exec(( err, count ) => {
+    console.log( 'Counting = ', count ); 
     if ( count > 0 ) {
       return;
     } else {
       var blogs = [
 	{
+          index: 'blog_this-is-my-first-project', 
 	  title: 'This is My First Project',
 	  img: 'http://combiboilersleeds.com/images/react/react-0.jpg',
 	  data: [
@@ -17,6 +20,7 @@ export default function() {
 	  ]
 	},
 	{
+          index: 'blog_how-i-built-this-site', 
 	  title: 'How I Built This Site',
 	  img: 'https://www.usb-antivirus.com/wp-content/uploads/2014/11/tutorial-windwos-10-2-320x202.png',
 	  data: [

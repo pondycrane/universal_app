@@ -2,6 +2,7 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema; 
 
 const blogSchema = new Schema({
+  index: { type: String, require: true }, 
   title: {type: String, require: true}, 
   img: {type: String, require: true}, 
   dateAdded: { type: 'Date', default: Date.now, required: true }, 

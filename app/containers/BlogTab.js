@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 import treehouseTheme from '../themes/treehouse';
 import TodoList from '../components/TodoList';
 import Blogs from '../components/BlogTab/Blogs'; 
-import Blog from '../components/BlogTab/Blog'; 
+//import Blog from '../components/BlogTab/Blog'; 
 
 class BlogTab extends Component {
   constructor( props ) {
@@ -39,6 +39,14 @@ class BlogTab extends Component {
     }); 
   }
 
+  handleBlogPress( blogInd ) {
+    this.context.navigator.push( {
+      index: this.props.blogs.blogs[ blogInd ].index, 
+      title: this.props.blogs.blogs[ blogInd ].title
+    } ); 
+    this.handleBlogOpen( blogInd )
+  }
+
   handleBlogBack() {
     const { dispatch } = this.props; 
     dispatch({
@@ -56,18 +64,10 @@ class BlogTab extends Component {
           />}
           style={{backgroundColor:'#FFFFFF'}} 
         >
-          {
-            this.props.blogs.blogOpen ? 
-            <Blog
-              blog_data={ this.props.blogs.blogs[ this.props.blogs.blogInd ] }
-              handleBlogBack={ this.handleBlogBack.bind(this) }
-            />
-            :
-            <Blogs 
-              blog_data={ this.props.blogs.blogs }
-              handleBlogOpen={ this.handleBlogOpen.bind(this) }
-            />
-          }
+        <Blogs 
+          blog_data={ this.props.blogs.blogs }
+          handleBlogOpen={ this.handleBlogPress.bind(this) }
+        />
         </Content>
       </Container>
     );
